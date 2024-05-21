@@ -9,7 +9,7 @@ body{
     margin-left: 100px;
     min-height: 100vh;
     background-color: black;
-    background-image: url(/sign\ in/backimg2.jpg);
+    background-image: url(/sign_in/backimg2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -181,7 +181,7 @@ input[type="password"]::placeholder {
         
         min-height: 100vh;
         background-color: black;
-        background-image: url(/sign\ in/bgimg123.jpg);
+        background-image: url(/sign_in/bgimg123.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
