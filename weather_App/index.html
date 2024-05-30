@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="/weather/style.css">
+    
+</head>
+<body>
+    <div class="hello">
+        Hey! <br> Want to know how weather is?
+    </div>
+    
+    <div class="search">
+        <input class="input" type="text" placeholder="enter place name" spellcheck="false">
+        <button class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="location_not">
+        <p>Sorry Location not found</p>
+        <img src="/weather/images/404.png" alt="error 404">
+        <p>error 404</p>
+    </div>
+    <div class="weather">
+        <div class="weather-icon">
+            <img class="wimg" src="/weather/images/rain.png" alt="weather">
+            <div class="temp">
+                <p class="celcius">0°C</p>
+                <p class="dtype">rainy day</p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="box">
+    <div class="extra">
+        <div class="humidity">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="hmes">
+                <p id="hname">0%</p>
+                <p >Humidity</p>
+            </div>
+        </div>
+        <div class="wind">
+            <i class="fa-solid fa-wind"></i>
+            <div class="wmes">
+                <p id="wname">0 Km/h</p>
+                <p >Wind Speed</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="visible">
+        <i class="fa-solid fa-eye"></i>
+        <div class="vmes">
+            <p id="vname">0 meters</p>
+            <p >Visibility</p>
+        </div>
+    </div>
+</div>
+    <div class="sun">
+        <div class="sunrise">
+            <i class="fa-solid fa-sun"></i>
+            <div class="srmes">
+                <p id="srname">--:--:--</p>
+                <p >Sunrise</p>
+            </div>
+        </div>
+        <div class="sunset">
+            <i class="fa-solid fa-moon"></i>
+            <div class="ssmes">
+                <p id="ssname">--:--:--</p>
+                <p >Sunset</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        Enjoy your day !!!!
+    </footer>
+    <script src="/weather/app.js"></script>
+    <script src="https://kit.fontawesome.com/ba251d8802.js" crossorigin="anonymous"></script>
+</body>
+</html>

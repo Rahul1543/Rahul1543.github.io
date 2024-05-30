@@ -1,0 +1,387 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+body{
+    
+    min-height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    background-size: cover;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-repeat: no-repeat;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.hello{
+    font-weight: 600;
+    text-align: center;
+    font-size: 4vmin;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vmin;
+
+}
+.search input{
+    height: 5vmin;
+    width: 35vmin;
+    border-radius: 1.5vmin;
+    font-size: 3vmin;
+    place-content: inherit;
+}
+.search input::placeholder{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.search input:hover{
+    background-color: lightgray;
+}
+.search button{
+    height: 5vmin;
+    width: 5vmin;
+    border-radius: 10vmin;
+    margin-left: 2vmin;
+    font-size: 3vmin;
+}
+.search button:hover{
+    background-color: gray;
+    
+}
+.weather{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.weather-icon img{
+    height: 40vmin;
+    width:40vmin;
+}
+.temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2vmin;
+}
+.dtype{
+    font-size: 4.5vmin;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+     
+}
+.celcius{
+    font-size: 6vmin;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1vmin;   
+}
+.extra{
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    margin-top: 3vmin;
+}
+.humidity {
+    display: flex;
+    align-items: center;
+    margin-right: 10vmin;
+}
+.humidity i{
+    font-size: 6vmin;
+}
+.hmes{
+    padding: 1vmin;
+    font-size: 3vmin;
+    font-weight: 600;
+}
+.visible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vmin;
+    margin-left: 5vmin;
+}
+.visible i{
+    font-size: 6vmin;
+}
+.vmes{
+    padding: 1vmin;
+    font-size: 3vmin;
+    font-weight: 600;
+}
+.wind i{
+    font-size: 6vmin;
+}
+.wmes{
+    padding: 1vmin;
+    font-size: 3vmin;
+    font-weight: 600;
+}
+.wind{
+    display: flex;
+    align-items: center;
+}
+.sun{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vmin;
+}
+.sunrise {
+    display: flex;
+    align-items: center;
+    margin-right: 10vmin;
+}
+.sunrise i{
+    font-size: 6vmin;
+}
+.srmes{
+    padding: 1vmin;
+    font-size: 3vmin;
+    font-weight: 600;
+}
+.sunset {
+    display: flex;
+    align-items: center;
+    margin-right: 10vmin;
+}
+.sunset i{
+    font-size: 6vmin;
+}
+.ssmes{
+    padding: 1vmin;
+    font-size: 3vmin;
+    font-weight: 600;
+}
+
+.location_not{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4vmin;
+}
+.location_not p{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin-bottom: 4vmin;
+    font-size: 4vmin;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vmin;
+    text-align: center;
+    margin-bottom: 2vmin;
+    font-size: 5vmin;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    
+}
+
+
+
+@media only screen and (max-device-width:480px){
+    body{
+        min-height: 100vh;
+        background-size: cover;
+        background: linear-gradient(to right, #5f2c82, #49a09d);
+        background-repeat: no-repeat;
+    }
+    .hello{
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 7vmin;
+        margin-top: 6vmin;
+    }
+    .search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vmin;
+        margin-bottom: 8vmin;
+    
+    }
+    .search input{
+        height: 10vmin;
+        width: 65vmin;
+        border: black;
+        border-radius: 2vmin;
+        font-size: 5vmin;
+        place-content: inherit;
+    }
+    .search input::placeholder{
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+    
+    }
+    .search input:hover{
+        background-color: lightgray;
+    }
+    .search button{
+        height: 10vmin;
+        width: 10vmin;
+        border-radius: 10vmin;
+        margin-left: 4vmin;
+        font-size: 3vmin;
+    }
+    .search button:hover{
+        background-color: gray;
+        
+    }
+    .weather{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .weather-icon img{
+        height: 40vmin;
+        width:40vmin;
+    }
+    .temp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 5vmin;
+    }
+    .dtype{
+        font-size: 8vmin;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+         
+    }
+    .celcius{
+        font-size: 10vmin;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 1vmin;   
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .extra{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vmin;
+        margin-bottom: 5vmin;
+    }
+    .humidity {
+        display: flex;
+        align-items: center;
+        margin-right: 10vmin;
+    }
+    .humidity i{
+        font-size: 11vmin;
+    }
+    .hmes{
+        padding: 1vmin;
+        font-size: 5vmin;
+        font-weight: 600;
+    }
+    .wind i{
+        font-size: 11vmin;
+    }
+    .wmes{
+        padding: 1vmin;
+        font-size: 5vmin;
+        font-weight: 600;
+    }
+    .wind{
+        display: flex;
+        align-items: center;
+    }
+    .visible{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vmin;
+    margin-bottom: 7vmin;
+        
+    }
+    .visible i{
+        font-size: 11vmin;
+    }
+    .vmes{
+        padding: 1vmin;
+        font-size: 5vmin;
+        font-weight: 600;
+    }
+    .sun{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7vmin;
+        margin-bottom: 7vmin;
+
+    }
+    .sunrise {
+        display: flex;
+        align-items: center;
+        margin-right: 10vmin;
+        margin-left: 6vmin;
+    }
+    .sunrise i{
+        font-size: 11vmin;
+    }
+    .srmes{
+        padding: 1.5vmin;
+        font-size: 5vmin;
+        font-weight: 600;
+    }
+    .sunset {
+        display: flex;
+        align-items: center;
+        margin-right: 3vmin;
+    }
+    .sunset i{
+        font-size: 11vmin;
+    }
+    .ssmes{
+        padding: 1vmin;
+        font-size: 5vmin;
+        font-weight: 600;
+    }
+    .location_not{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 4vmin;
+    }
+    .location_not p{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        margin-bottom: 4vmin;
+        font-size: 7vmin;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 18vmin;
+        text-align: center;
+        margin-bottom: 7vmin;
+        font-size: 7vmin;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        
+    }
+}
